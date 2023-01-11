@@ -1,0 +1,80 @@
+
+
+.block {
+  height: 5em;
+  line-height: 5em;
+  width: 10em;
+  background: #464646;
+  color: #fdfdfd;
+  text-align: center;
+  margin: 1em auto;
+  text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
+}
+
+.animatable {
+  visibility: hidden;  
+  animation-play-state: paused; 
+}
+
+
+.animated {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-play-state: ;
+}
+
+@keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-2000px);
+	}
+
+	60% {
+		transform: translateX(20px);
+	}
+
+	80% {
+		transform: translateX(-5px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes bounceInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(2000px);
+	}
+
+	60% {
+		transform: translateX(-20px);
+	}
+
+	80% {
+		transform: translateX(5px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+.animated.animationDelay{
+	animation-delay:.10s;
+}
+
+
+.animated.bounceInRight {
+	
+	animation-name: bounceInRight;
+}
+.animated.bounceInLeft {
+	
+	animation-name: bounceInLeft;
+}

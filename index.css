@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+ul li a .nav-link :hover {
+    display: block;
+}
+
+span {
+    color: white;
+}
+
+span:hover {
+    color: #948a7e;
+}
+
+input[type="text"] {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+}
+
+label:hover {
+    transform: translateY(30);
+    transition-delay: all 2s ease;
+}
+
